@@ -16,7 +16,7 @@
 
 body{
     font-family: Arial, sans-serif; 
-    margin: 0;
+    margin: 5px;
     padding: 0;
     background-color: black; /* Set the background color to black */
 }
@@ -25,24 +25,22 @@ body{
 
 /* --------------------------- Navigation Section --------------------------- */
 
-
-/* Style the navigation container */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: black; /* Background color for the navigation bar */
-    color: white; /* Text color for navigation items */
+    background-color: black; 
+    color: white; 
 }
 
-/* Style the logo */
+/* Styling the logo */
 .logo img {
-    max-width: 100px; /* Adjust the logo's max width as needed */
+    max-width: 100px;
     height: auto;
 }
 
-/* Style the navigation items for desktop */
+/* Styling the navigation items for desktop */
 .nav-items ul {
     list-style: none;
     display: flex;
@@ -51,22 +49,21 @@ nav {
 }
 
 .nav-items li {
-    margin-right: 20px; /* Adjust spacing between navigation items */
+    margin-right: 20px; 
     cursor: pointer;
 }
 
-/* Style the links in navigation items */
+/* Styling the links in navigation items */
 .nav-items li a {
     text-decoration: none;
     color: white;
 }
 
-/* Style the links on hover */
 .nav-items li:hover {
     text-decoration: underline;
 }
 
-/* Style the navigation toggle icon for mobile */
+/* Styling the navigation toggle icon for mobile */
 .nav-toggle {
     display: none; /* Initially hidden for desktop views */
 }
@@ -88,11 +85,11 @@ nav {
     }
 
     .nav-items.active ul {
-        display: flex; /* Show the navigation items when active */
+        display: flex; 
     }
 
     .nav-toggle {
-        display: block; /* Show the toggle icon for mobile */
+        display: block; 
         cursor: pointer;
     }
 } 
@@ -100,7 +97,7 @@ nav {
 /* Reduce image size for screens less than 500px width */
 @media (max-width: 500px) {
     .logo{
-        max-width: 70px; /* Adjust the logo's max width for mobile */
+        max-width: 70px; 
     }
 }
 
@@ -108,32 +105,23 @@ nav {
 
 /* --------------------------- Carousel Section --------------------------- */
 
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 5px;
-    
-}
-
-
-
-/* Define styles for the carousel container */
+/* Styleing for the carousel container */
 .carousel-container {
     position: relative;
     overflow: hidden;
-    max-width: 100%; /* Ensures the carousel fits its parent */
+    max-width: 100%; 
     margin: 4px; 
     height: 80%; 
 }
 
-/* Define styles for the carousel slides (images) */
+/* Styling for the carousel slides (images) */
 .carousel-slide {
-    display: none; /* Hide slides by default */
+    display: none; 
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
 }
 
-/* Define styles for the carousel controls */
+/* Styleing for the carousel controls */
 .carousel-controls {
     position: absolute;
     top: 50%;
@@ -142,17 +130,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px; /* Adjust padding as needed */
+    padding: 10px; 
 }
 
-/* Style the previous and next buttons */
+/* Styling the previous and next buttons */
 .fa-chevron-left,
 .fa-chevron-right {
     font-size: 24px;
     cursor: pointer;
-    background-color: white; /* White background for buttons */
-    padding: 14px; /* Adjust padding to control button size */
-    border-radius: 50%; /* Rounded buttons */
+    background-color: white; 
+    padding: 14px; 
+    border-radius: 50%; 
 } 
 
 .fa-chevron-right{
@@ -175,9 +163,47 @@ img {
     }
 }
 
-
-
-
-
 /* ------------------------------------------------------------------------ */
 
+/* --------------------------- About Section Navigation --------------------------- */ 
+
+#about {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* White background with transparency */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h2 {
+    color: white;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-images img {
+    width: 100%; /* Make the images take up 100% of their container */
+    max-width: 150px; /* Adjust the maximum width as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+/* ------------------------------------------------------------------------ ------- */
