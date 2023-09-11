@@ -1,0 +1,183 @@
+/* 
+    Cosmic GreenHaus (Pty)Ltd (CGH)
+    CGH is a start up providing energy solutions, mainly solar solutions, but not limited to that only. This site also serves as the Portfolio project for Khanya.
+    This StyleSheet is modeled after the company colours and logo, being: 
+    List Colours: 
+
+    Author: Khanya Gqirana, who is also a director. 
+    Date: 11/09/2023 (Due Date - Assignemnt 1: Home Page of the site
+
+    Filename: styles.css
+
+*/ 
+
+/* --------------------------- General Styles --------------------------- */
+
+
+body{
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Set the background color to black */
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* --------------------------- Navigation Section --------------------------- */
+
+
+/* Style the navigation container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black; /* Background color for the navigation bar */
+    color: white; /* Text color for navigation items */
+}
+
+/* Style the logo */
+.logo img {
+    max-width: 100px; /* Adjust the logo's max width as needed */
+    height: auto;
+}
+
+/* Style the navigation items for desktop */
+.nav-items ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-items li {
+    margin-right: 20px; /* Adjust spacing between navigation items */
+    cursor: pointer;
+}
+
+/* Style the links in navigation items */
+.nav-items li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style the links on hover */
+.nav-items li:hover {
+    text-decoration: underline;
+}
+
+/* Style the navigation toggle icon for mobile */
+.nav-toggle {
+    display: none; /* Initially hidden for desktop views */
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    /* Mobile and Tablet */
+    .nav-items ul {
+        display: none; /* Hide the navigation items for mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .nav-items.active ul {
+        display: flex; /* Show the navigation items when active */
+    }
+
+    .nav-toggle {
+        display: block; /* Show the toggle icon for mobile */
+        cursor: pointer;
+    }
+} 
+
+/* Reduce image size for screens less than 500px width */
+@media (max-width: 500px) {
+    .logo{
+        max-width: 70px; /* Adjust the logo's max width for mobile */
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* --------------------------- Carousel Section --------------------------- */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 5px;
+    
+}
+
+
+
+/* Define styles for the carousel container */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%; /* Ensures the carousel fits its parent */
+    margin: 4px; 
+    height: 80%; 
+}
+
+/* Define styles for the carousel slides (images) */
+.carousel-slide {
+    display: none; /* Hide slides by default */
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Define styles for the carousel controls */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* Style the previous and next buttons */
+.fa-chevron-left,
+.fa-chevron-right {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: white; /* White background for buttons */
+    padding: 14px; /* Adjust padding to control button size */
+    border-radius: 50%; /* Rounded buttons */
+} 
+
+.fa-chevron-right{
+    margin-right: 12px;
+}
+
+/* Make the images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Define keyframes for auto-scrolling */
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
+
